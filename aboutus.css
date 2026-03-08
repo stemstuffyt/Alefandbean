@@ -1,0 +1,38 @@
+/* Styles specific to the About Us page */
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.owners {
+  margin-top: 2rem;
+}
+
+.owner-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.owner-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .owner-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  .owner-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
