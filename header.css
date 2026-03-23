@@ -1,5 +1,10 @@
 /* Header-specific styles shared across pages */
 
+.site-header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -12,23 +17,23 @@
 .brand {
   font-family: 'The Seasons', serif;
   font-size: 1.5rem;
-  color: var(--accent);
+  color: #4b3240;
 }
 
 .brand a {
-  color: var(--accent);
+  color: #4b3240;
   text-decoration: none;
 }
 
 .brand-img {
-  height: 50px;
+  height: 30px;
   width: auto;
   display: block;
 }
 
 .nav a {
   margin-left: 1rem;
-  color: var(--muted);
+  color: #4b3240;
   text-decoration: none;
   font-weight: 600;
 }
@@ -38,7 +43,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--accent);
+  color: #4b3240;
   text-decoration: none;
   display: flex;
   align-items: center;
