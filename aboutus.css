@@ -1,19 +1,40 @@
 /* Styles specific to the About Us page */
 
+.about {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
 .about h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: var(--accent);
 }
 
+.about p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  color: #333;
+}
+
 .owners {
-  margin-top: 2rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.owners h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--accent);
 }
 
 .owner-profile {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
@@ -23,16 +44,32 @@
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--accent);
+  flex-shrink: 0;
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
   .owner-profile {
     flex-direction: column;
     text-align: center;
+    gap: 1.5rem;
   }
+
   .owner-photo {
     width: 150px;
     height: 150px;
   }
 }
+
