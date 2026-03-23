@@ -1,7 +1,7 @@
 /* Basic reset */
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#fff7f0;
+  --bg:#adb886;
   --accent:#6b4f3b;
   --muted:#6b6b6b;
   --card:#fff;
