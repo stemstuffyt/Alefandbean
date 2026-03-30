@@ -224,6 +224,15 @@
     </div>
   </div>
 
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Alef & Bean — The first letter. The first sip.</p>
+    </div>
+  </footer>
+
   <script src="menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
