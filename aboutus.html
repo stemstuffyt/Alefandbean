@@ -97,8 +97,14 @@
     </main>
 
     <footer class="site-footer">
-      &copy; 2026 Alef &amp; Bean
+      <div class="container">
+        <p>© <span id="year"></span> Alef & Bean — The first letter. The first sip.</p>
+      </div>
     </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </div>
 </body>
 </html>
