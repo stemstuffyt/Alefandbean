@@ -1,128 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Alef & Bean Coffee</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=The+Seasons&family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="header.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8A9A86; /* Sage Green */
+            color: #4A2E35; /* Plum */
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        h1 {
+            font-size: 4rem; /* Big, impactful size */
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Adjust font size for smaller screens like phones */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="brand"><a href="index.html"><img src="headerwhiteback.png" alt="Alef & Bean" class="brand-img"></a></h1>
-      <nav class="nav">
-        <a href="aboutus.html">About Us</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact</a>
-        <a href="jobapplication.html">Careers</a>
-      </nav>
-      <a href="https://www.instagram.com/alefandbean/" class="social-link instagram-link" target="_blank" rel="noopener noreferrer">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-          <circle cx="17.5" cy="6.5" r="1.5"></circle>
-        </svg>
-      </a>
-    </div>
-  </header>
 
-  <section class="hero">
-    <div class="hero-content container">
-      <h2>Arabic culinary excellence and cultivated community.</h2>
-      <p>The first letter. The first sip.</p>
-      <a class="btn" href="menu.html">See Menu</a>
-    </div>
-  </section>
+    <h1>Coming Soon</h1>
 
-  <main class="container">
-    <section id="about" class="about">
-      <h3>About Us</h3>
-      <p>Alef & Bean is a taste of Arabic excellence in the middle of Fulshear, Texas. Come for the coffee, stay for the community.</p>
-    </section>
-
-    <section id="menu" class="menu">
-      <h3>Menu Highlights</h3>
-      <div class="grid">
-        <div class="card">
-          <h4>Espresso</h4>
-          <p>Intense, syrupy, and balanced — single or double.</p>
-          <span class="price">$3 / $4</span>
-        </div>
-        <div class="card">
-          <h4>Latte</h4>
-          <p>Velvety milk with a pulled espresso shot.</p>
-          <span class="price">$4.50</span>
-        </div>
-        <div class="card">
-          <h4>Pour Over</h4>
-          <p>Single origin, brewed to order.</p>
-          <span class="price">$5</span>
-        </div>
-        <div class="card">
-          <h4>Almond Croissant</h4>
-          <p>Buttery pastry with almond frangipane.</p>
-          <span class="price">$3.75</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <h3>Contact & Hours</h3>
-      <div class="contact-grid">
-        <div>
-          <p><strong>Address:</strong> 26440 FM 1093 Suite A100, Richmond, TX 77406</p>
-          <p><strong>Hours:</strong> Mon–Fri 7am–6pm, Sat–Sun 8am–5pm</p>
-          <p><strong>Phone:</strong> (555) 123-4567</p>
-        </div>
-        <form class="contact-form" onsubmit="alert('Thanks — this is a demo form.'); return false;">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="3" placeholder="Questions or feedback"></textarea>
-          <button class="btn" type="submit">Send</button>
-        </form>
-      </div>
-    </section>
-
-    <section id="reviews" class="reviews">
-      <h3>Customer Reviews</h3>
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-header">
-            <h4>Sarah M.</h4>
-            <div class="stars">★★★★★</div>
-          </div>
-          <p>"The espresso here is absolutely incredible! The baristas really know their craft, and the atmosphere is so warm and welcoming. I come here every morning."</p>
-        </div>
-        <div class="review-card">
-          <div class="review-header">
-            <h4>James T.</h4>
-            <div class="stars">★★★★★</div>
-          </div>
-          <p>"The owners are attentive and the design is so great!"</p>
-        </div>
-        <div class="review-card">
-          <div class="review-header">
-            <h4>Emma L.</h4>
-            <div class="stars">★★★★☆</div>
-          </div>
-          <p>"Great coffee and a nice spot to work from. My only wish is that they had a few more seating options, but otherwise fantastic experience!"</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Alef & Bean — The first letter. The first sip.</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
